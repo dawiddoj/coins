@@ -1,0 +1,22 @@
+sp {monety*propose*wysyp
+   (state <s> ^name monety
+              ^pig <p>)
+   (<p> ^content > 0) 
+               
+-->
+   (<s> ^operator <op> + =)
+   (<op> ^name wysyp
+         ^oprozniana <p>)
+   
+}
+sp {apply*wysyp
+   (state <s> ^operator <op>
+              ^pig <p>)
+   (<op> ^name wysyp
+         ^oprozniana <p>)
+   (<p> ^content <co>)
+
+-->
+   (<p> ^content 0
+        ^content <co> -)
+}

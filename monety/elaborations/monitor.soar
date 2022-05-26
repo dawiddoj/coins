@@ -1,0 +1,11 @@
+sp {monety*monitor*state
+   (state <s> ^name monety
+              ^pig <p1>
+              ^pig <p2>)
+   (<p1> ^capacity 50
+         ^content <co1>)
+   (<p2> ^capacity 30
+         ^content <co2>)
+-->
+   (write (crlf) | 50:| <co1> | 30:| <co2> )
+}

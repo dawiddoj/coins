@@ -1,0 +1,5 @@
+source _all.soar
+source cel.soar
+source monitor.soar
+source top-state.soar
+source wolnem.soar

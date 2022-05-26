@@ -1,0 +1,3 @@
+pushd monety
+source monety_source.soar
+popd

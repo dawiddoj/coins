@@ -1,0 +1,9 @@
+sp {elaborations*elaborate*wolnem
+   (state <s> ^name monety
+              ^pig <p>)
+   (<p> ^capacity <ca>
+        ^content <co>)
+-->
+   (<p> ^wolnem(- <ca> <co>)
+   )
+}

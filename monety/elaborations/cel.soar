@@ -1,0 +1,12 @@
+sp {elaborations*elaborate*cel
+   (state <s> ^name monety
+              ^pig <p1>
+              ^pig <p2>)
+   (<p1> ^capacity 50
+         ^content 10)
+   (<p2> ^capacity 30
+         ^content 30)
+-->
+   (write (crlf) |Solved.|)
+   (halt)
+}
