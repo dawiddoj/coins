@@ -1,0 +1,56 @@
+sp {monety*propose*przesyp
+   (state <s> ^name monety
+              ^pig <p1>
+              ^pig {<p2> <> <p1>})
+   (<p1> ^wolnem > 0)
+        
+   (<p2> ^content > 0)
+-->
+   (<s> ^operator <op> + =)
+   (<op> ^name przesyp
+         ^oprozniana <p2>
+         ^napelniana <p1>)
+   
+}
+sp {apply*przesyp
+   (state <s> ^operator <op>
+              ^pig <p1>
+              ^pig <p2>)
+   (<op> ^name przesyp
+         ^oprozniana <p2>
+         ^napelniana <p1>)
+   
+   (<p1> ^capacity <ca1>
+         ^content <co1>
+         ^wolnem <wm1>)
+   
+   (<p2> ^capacity <ca2>
+         ^content {<co2> <= <wm1>})
+  
+-->
+   (<p2> ^content 0
+         ^content <co2> - )
+   (<p1> ^content (+ <co1> <co2>)
+         ^content <co1> - )
+}
+sp {apply*przesyp*
+   (state <s> ^operator <op>
+              ^pig <p1>
+              ^pig <p2>)
+   
+   (<op> ^name przesyp
+         ^oprozniana <p2>
+         ^napelniana <p1>)
+   
+   (<p1> ^capacity <ca1>
+         ^content <co1>
+         ^wolnem <wm1>)
+   
+   (<p2> ^capacity <ca2>
+         ^content {<co2> > <wm1>})
+-->
+   (<p2> ^content (- <co2> <wm1>)
+         ^content <co2> - )
+   (<p1> ^content <ca1>
+         ^content <co1> - )
+}

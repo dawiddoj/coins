@@ -13,9 +13,14 @@ sp {apply*initialize-monety
    (<s> ^name monety
         ^pig <p1>
         ^pig <p2>)
+   
    (<p1> ^capacity 50
          ^content 0
          ^namep big)
+   
    (<p2> ^capacity 30
+         ^content 0
+         ^namep small)
+
 }
 

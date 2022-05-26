@@ -2,7 +2,7 @@
 
 This program was made as a final project for a course named "Problem solving".
 
-Program was made in [Soar](https://en.wikipedia.org/wiki/Soar_(cognitive_architecture)) which is a cognitive architecture made by scientist at Carnegie Mellon University.
+Program was made in [Soar](https://soar.eecs.umich.edu/) which is a cognitive architecture.
 
 Intelligent agent here has a goal of achieving particular number of coins in casket by using couple of premade functions.
 
